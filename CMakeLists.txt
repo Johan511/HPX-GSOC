@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.18)
+project(gsoc CXX)
+find_package(HPX REQUIRED)
+add_executable(gsoc src/main.cpp)
+target_link_libraries(gsoc HPX::hpx )
